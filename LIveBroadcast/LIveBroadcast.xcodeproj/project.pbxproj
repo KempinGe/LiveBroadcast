@@ -7,19 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */; };
+		063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1A1DE53AEE00ADDD1D /* Consts.swift */; };
+		063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */; };
+		063A5B1F1DE58C1500ADDD1D /* Uicolor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1E1DE58C1500ADDD1D /* Uicolor+Extension.swift */; };
 		069C639B1DE43F3B0019F9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */; };
-		069C63A01DE43F3B0019F9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C639E1DE43F3B0019F9E5 /* Main.storyboard */; };
 		069C63A21DE43F3B0019F9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069C63A11DE43F3B0019F9E5 /* Assets.xcassets */; };
 		069C63A51DE43F3B0019F9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63A31DE43F3B0019F9E5 /* LaunchScreen.storyboard */; };
+		069C63B71DE46DB00019F9E5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63B51DE46DB00019F9E5 /* Home.storyboard */; };
+		069C63B91DE46DE40019F9E5 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63B81DE46DE40019F9E5 /* Live.storyboard */; };
+		069C63BC1DE46DF60019F9E5 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63BA1DE46DF60019F9E5 /* Follow.storyboard */; };
+		069C63BE1DE46E070019F9E5 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63BD1DE46E070019F9E5 /* Mine.storyboard */; };
+		069C63C71DE473240019F9E5 /* GKBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63C61DE473240019F9E5 /* GKBMainViewController.swift */; };
+		069C63C91DE473B20019F9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63C81DE473B20019F9E5 /* Main.storyboard */; };
+		069C63D71DE47D800019F9E5 /* GKBMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63D61DE47D800019F9E5 /* GKBMineViewController.swift */; };
+		069C63D91DE47DA80019F9E5 /* GKBFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63D81DE47DA80019F9E5 /* GKBFollowViewController.swift */; };
+		069C63DB1DE47DBF0019F9E5 /* GKBLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DA1DE47DBF0019F9E5 /* GKBLiveViewController.swift */; };
+		069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */; };
+		069C63E01DE481F20019F9E5 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DF1DE481F20019F9E5 /* UIBarButtonItem+Extension.swift */; };
+		C06B887F5870573C4ADDF8AF /* libPods-LIveBroadcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageTittleView.swift; sourceTree = "<group>"; };
+		063A5B1A1DE53AEE00ADDD1D /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageContentView.swift; sourceTree = "<group>"; };
+		063A5B1E1DE58C1500ADDD1D /* Uicolor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Uicolor+Extension.swift"; sourceTree = "<group>"; };
 		069C63971DE43F3B0019F9E5 /* LIveBroadcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveBroadcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		069C639F1DE43F3B0019F9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		069C63A11DE43F3B0019F9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		069C63A41DE43F3B0019F9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069C63A61DE43F3B0019F9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		069C63B61DE46DB00019F9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LIveBroadcast/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		069C63B81DE46DE40019F9E5 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../Main/Live.storyboard; sourceTree = "<group>"; };
+		069C63BB1DE46DF60019F9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LIveBroadcast/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		069C63BD1DE46E070019F9E5 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mine.storyboard; path = ../../Main/Mine.storyboard; sourceTree = "<group>"; };
+		069C63C61DE473240019F9E5 /* GKBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBMainViewController.swift; sourceTree = "<group>"; };
+		069C63C81DE473B20019F9E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		069C63D61DE47D800019F9E5 /* GKBMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBMineViewController.swift; sourceTree = "<group>"; };
+		069C63D81DE47DA80019F9E5 /* GKBFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBFollowViewController.swift; sourceTree = "<group>"; };
+		069C63DA1DE47DBF0019F9E5 /* GKBLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBLiveViewController.swift; sourceTree = "<group>"; };
+		069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBHomeViewController.swift; sourceTree = "<group>"; };
+		069C63DF1DE481F20019F9E5 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.release.xcconfig"; sourceTree = "<group>"; };
+		D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LIveBroadcast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06B887F5870573C4ADDF8AF /* libPods-LIveBroadcast.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +71,8 @@
 			children = (
 				069C63991DE43F3B0019F9E5 /* LIveBroadcast */,
 				069C63981DE43F3B0019F9E5 /* Products */,
+				93BE646ADA1283FE30BA06B3 /* Pods */,
+				D1AD822FFE6DA5A1658963F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +89,6 @@
 			children = (
 				069C63AE1DE448E40019F9E5 /* classes */,
 				069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */,
-				069C639E1DE43F3B0019F9E5 /* Main.storyboard */,
 				069C63A11DE43F3B0019F9E5 /* Assets.xcassets */,
 				069C63A31DE43F3B0019F9E5 /* LaunchScreen.storyboard */,
 				069C63A61DE43F3B0019F9E5 /* Info.plist */,
@@ -78,6 +112,9 @@
 		069C63AF1DE448E40019F9E5 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				069C63CD1DE474600019F9E5 /* Controller */,
+				069C63CE1DE474600019F9E5 /* Model */,
+				069C63CF1DE474600019F9E5 /* View */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -85,6 +122,9 @@
 		069C63B01DE448E40019F9E5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				069C63CA1DE4743B0019F9E5 /* Controller */,
+				069C63CB1DE4743B0019F9E5 /* Model */,
+				069C63CC1DE4743B0019F9E5 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -92,6 +132,9 @@
 		069C63B11DE448E40019F9E5 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				069C63D01DE474720019F9E5 /* Controller */,
+				069C63D11DE474720019F9E5 /* Model */,
+				069C63D21DE474720019F9E5 /* View */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -99,6 +142,9 @@
 		069C63B21DE448E40019F9E5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				069C63C31DE472B90019F9E5 /* Controller */,
+				069C63C41DE472B90019F9E5 /* Model */,
+				069C63C51DE472B90019F9E5 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -106,6 +152,9 @@
 		069C63B31DE448E40019F9E5 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				069C63D31DE474920019F9E5 /* Controller */,
+				069C63D41DE474920019F9E5 /* Model */,
+				069C63D51DE474920019F9E5 /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -113,8 +162,153 @@
 		069C63B41DE448E40019F9E5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				069C63DE1DE481D50019F9E5 /* Extension */,
+				063A5B1A1DE53AEE00ADDD1D /* Consts.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		069C63C31DE472B90019F9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069C63C81DE473B20019F9E5 /* Main.storyboard */,
+				069C63C61DE473240019F9E5 /* GKBMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069C63C41DE472B90019F9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069C63C51DE472B90019F9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */,
+				063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		069C63CA1DE4743B0019F9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069C63B51DE46DB00019F9E5 /* Home.storyboard */,
+				069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069C63CB1DE4743B0019F9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069C63CC1DE4743B0019F9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		069C63CD1DE474600019F9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069C63BA1DE46DF60019F9E5 /* Follow.storyboard */,
+				069C63D81DE47DA80019F9E5 /* GKBFollowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069C63CE1DE474600019F9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069C63CF1DE474600019F9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		069C63D01DE474720019F9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069C63B81DE46DE40019F9E5 /* Live.storyboard */,
+				069C63DA1DE47DBF0019F9E5 /* GKBLiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069C63D11DE474720019F9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069C63D21DE474720019F9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		069C63D31DE474920019F9E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				069C63BD1DE46E070019F9E5 /* Mine.storyboard */,
+				069C63D61DE47D800019F9E5 /* GKBMineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		069C63D41DE474920019F9E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		069C63D51DE474920019F9E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		069C63DE1DE481D50019F9E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				069C63DF1DE481F20019F9E5 /* UIBarButtonItem+Extension.swift */,
+				063A5B1E1DE58C1500ADDD1D /* Uicolor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		93BE646ADA1283FE30BA06B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */,
+				9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1AD822FFE6DA5A1658963F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 069C63A91DE43F3B0019F9E5 /* Build configuration list for PBXNativeTarget "LIveBroadcast" */;
 			buildPhases = (
+				F050AA304732D71480351E2B /* [CP] Check Pods Manifest.lock */,
 				069C63931DE43F3B0019F9E5 /* Sources */,
 				069C63941DE43F3B0019F9E5 /* Frameworks */,
 				069C63951DE43F3B0019F9E5 /* Resources */,
+				053CF9D48C6181C19BE998FF /* [CP] Embed Pods Frameworks */,
+				15E87EA0728DD02060ED38D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +340,7 @@
 		069C638F1DE43F3A0019F9E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GKB;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "盖凯宾";
@@ -176,40 +374,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069C63C91DE473B20019F9E5 /* Main.storyboard in Resources */,
 				069C63A51DE43F3B0019F9E5 /* LaunchScreen.storyboard in Resources */,
 				069C63A21DE43F3B0019F9E5 /* Assets.xcassets in Resources */,
-				069C63A01DE43F3B0019F9E5 /* Main.storyboard in Resources */,
+				069C63B91DE46DE40019F9E5 /* Live.storyboard in Resources */,
+				069C63BE1DE46E070019F9E5 /* Mine.storyboard in Resources */,
+				069C63B71DE46DB00019F9E5 /* Home.storyboard in Resources */,
+				069C63BC1DE46DF60019F9E5 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053CF9D48C6181C19BE998FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15E87EA0728DD02060ED38D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F050AA304732D71480351E2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		069C63931DE43F3B0019F9E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069C63DB1DE47DBF0019F9E5 /* GKBLiveViewController.swift in Sources */,
+				063A5B1F1DE58C1500ADDD1D /* Uicolor+Extension.swift in Sources */,
+				069C63C71DE473240019F9E5 /* GKBMainViewController.swift in Sources */,
+				063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */,
 				069C639B1DE43F3B0019F9E5 /* AppDelegate.swift in Sources */,
+				069C63E01DE481F20019F9E5 /* UIBarButtonItem+Extension.swift in Sources */,
+				063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */,
+				069C63D91DE47DA80019F9E5 /* GKBFollowViewController.swift in Sources */,
+				069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */,
+				063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */,
+				069C63D71DE47D800019F9E5 /* GKBMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		069C639E1DE43F3B0019F9E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				069C639F1DE43F3B0019F9E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		069C63A31DE43F3B0019F9E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				069C63A41DE43F3B0019F9E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		069C63B51DE46DB00019F9E5 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				069C63B61DE46DB00019F9E5 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../../Main;
+			sourceTree = "<group>";
+		};
+		069C63BA1DE46DF60019F9E5 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				069C63BB1DE46DF60019F9E5 /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -310,6 +580,7 @@
 		};
 		069C63AA1DE43F3B0019F9E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -324,6 +595,7 @@
 		};
 		069C63AB1DE43F3B0019F9E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
