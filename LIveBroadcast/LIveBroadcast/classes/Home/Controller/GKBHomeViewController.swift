@@ -21,30 +21,32 @@ class GKBHomeViewController: UIViewController {
 
     
     
-    private lazy var pageTittleView : GKBPageTittleView = {
+     lazy var pageTittleView : GKBPageTittleView = {[weak self] in
         let tittles = ["推荐","游戏","娱乐","趣玩"]
         let frame = CGRect(x: 0, y: gstatuH+gNavH, width: gScreenW, height: tittleViewH)
         let tittleView = GKBPageTittleView(frame: frame, tittles: tittles)
+        tittleView.delegate = self
 //        tittleView.backgroundColor = UIColor.purple
         return tittleView
         
     }()
     
     //MARK:-
-    private lazy var pageContentView : GKBPageContentView = { [weak self] in
+     lazy var pageContentView : GKBPageContentView = { [weak self] in
         let contentH = gScreenH - tittleViewH - gstatuH - gNavH
         let contentFrame = CGRect(x: 0, y: gstatuH+gNavH+tittleViewH, width: (self?.view.frame.width)!, height: contentH)
-        var childVcs : [UIViewController] = [UIViewController]()
-        let arr : [CGFloat] = [233.0,155.0,177.77, 20.33]
+        var childVcs = [UIViewController]()
+       
         for var x in 0..<4{
-            let vc = UIViewController()
-            var a =  CGFloat(arr[x]/255)
-            vc.view.backgroundColor = UIColor.init(red: a, green: a, blue: a, alpha: 0.5)
+           let vc = UIViewController()
+            vc.view.backgroundColor = UIColor.red
             childVcs.append(vc)
         }
-        
+        GKBLog(message: childVcs)
         let contentView = GKBPageContentView(frame: contentFrame, childVcs: childVcs, prentVc: self!)
-        
+        contentView.delegate = self
+        GKBLog(message: contentView.frame)
+
         return contentView
     }()
 }
@@ -79,4 +81,17 @@ extension GKBHomeViewController {
     }
     
     
+}
+
+//MARK:-pagetiltleView的代理
+extension GKBHomeViewController : PageTitleDelegate, PagecontentViewScrollDelegate{
+    func pagecontentViewScroll(pagecontentView: GKBPageContentView, souceToIndex: Int, tagateIndex: Int, progress: CGFloat) {
+        pageTittleView.changeLabelTexColorAndLineX(souceIndex: souceToIndex, tagetIndex: tagateIndex, progress: progress)
+        
+    }
+
+    func pageTiltleDelegate(pageTitleView: GKBPageTittleView, selectedIndex: Int) {
+        pageContentView.isTitleCklic = true
+        pageContentView.pageTitleViewClick(selectedIndex: selectedIndex)
+    }
 }
