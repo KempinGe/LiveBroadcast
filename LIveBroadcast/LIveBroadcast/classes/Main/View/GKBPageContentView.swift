@@ -58,6 +58,7 @@ class GKBPageContentView: UIView {
     
     func setUpUi() {
         //将所有自控制器添加到父控制器中
+  
         for vc in childVcs {
             parentVc?.addChildViewController(vc)
         }
@@ -95,7 +96,6 @@ extension GKBPageContentView : UICollectionViewDelegate,UICollectionViewDataSour
           
         }
         //2.给Cell设置内容
-        cell.backgroundColor = UIColor.clear
         let childVc = childVcs[indexPath.item]
         childVc.view.frame = cell.contentView.bounds
 

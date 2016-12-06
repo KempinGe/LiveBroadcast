@@ -33,7 +33,7 @@ class GKBHomeViewController: UIViewController {
     
     //MARK:-
      lazy var pageContentView : GKBPageContentView = { [weak self] in
-        let contentH = gScreenH - tittleViewH - gstatuH - gNavH
+        let contentH = gScreenH - tittleViewH - gstatuH - gNavH - gTabbarH
         let contentFrame = CGRect(x: 0, y: gstatuH+gNavH+tittleViewH, width: (self?.view.frame.width)!, height: contentH)
         var childVcs = [UIViewController]()
         childVcs.append(GKBRecomentViewController())
@@ -46,6 +46,7 @@ class GKBHomeViewController: UIViewController {
         let contentView = GKBPageContentView(frame: contentFrame, childVcs: childVcs, prentVc: self!)
         contentView.delegate = self
         GKBLog(message: contentView.frame)
+        
 
         return contentView
     }()

@@ -11,6 +11,10 @@
 		063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1A1DE53AEE00ADDD1D /* Consts.swift */; };
 		063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */; };
 		0650EBE61DF64E53007AD663 /* GKBRecomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650EBE51DF64E53007AD663 /* GKBRecomentViewController.swift */; };
+		0650EBE91DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */; };
+		0650EBEA1DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */; };
+		0650EBED1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */; };
+		0650EBEE1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */; };
 		069C639B1DE43F3B0019F9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */; };
 		069C63A21DE43F3B0019F9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069C63A11DE43F3B0019F9E5 /* Assets.xcassets */; };
 		069C63A51DE43F3B0019F9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069C63A31DE43F3B0019F9E5 /* LaunchScreen.storyboard */; };
@@ -34,6 +38,10 @@
 		063A5B1A1DE53AEE00ADDD1D /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageContentView.swift; sourceTree = "<group>"; };
 		0650EBE51DF64E53007AD663 /* GKBRecomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomentViewController.swift; sourceTree = "<group>"; };
+		0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBCollectionHeaderReusableView.xib; sourceTree = "<group>"; };
+		0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		069C63971DE43F3B0019F9E5 /* LIveBroadcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveBroadcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		069C63A11DE43F3B0019F9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +223,10 @@
 		069C63CC1DE4743B0019F9E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */,
+				0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */,
+				0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */,
+				0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +362,7 @@
 				TargetAttributes = {
 					069C63961DE43F3B0019F9E5 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NJ6BK7F9R2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -380,10 +393,12 @@
 				069C63C91DE473B20019F9E5 /* Main.storyboard in Resources */,
 				069C63A51DE43F3B0019F9E5 /* LaunchScreen.storyboard in Resources */,
 				069C63A21DE43F3B0019F9E5 /* Assets.xcassets in Resources */,
+				0650EBEA1DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib in Resources */,
 				069C63B91DE46DE40019F9E5 /* Live.storyboard in Resources */,
 				069C63BE1DE46E070019F9E5 /* Mine.storyboard in Resources */,
 				069C63B71DE46DB00019F9E5 /* Home.storyboard in Resources */,
 				069C63BC1DE46DF60019F9E5 /* Follow.storyboard in Resources */,
+				0650EBEE1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +469,8 @@
 				069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */,
 				063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */,
 				069C63D71DE47D800019F9E5 /* GKBMineViewController.swift in Sources */,
+				0650EBED1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift in Sources */,
+				0650EBE91DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = NJ6BK7F9R2;
 				INFOPLIST_FILE = LIveBroadcast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -603,6 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = NJ6BK7F9R2;
 				INFOPLIST_FILE = LIveBroadcast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

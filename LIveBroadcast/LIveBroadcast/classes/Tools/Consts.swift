@@ -13,5 +13,6 @@ let gScreenH = UIScreen.main.bounds.height
 
 let gstatuH  : CGFloat = 20
 let gNavH  : CGFloat = 44
+let gTabbarH : CGFloat = 44
 
 
