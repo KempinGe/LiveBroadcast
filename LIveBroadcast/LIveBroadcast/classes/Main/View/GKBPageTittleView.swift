@@ -15,7 +15,8 @@ protocol PageTitleDelegate: class {
 
 
 private let scroLineH : CGFloat = 2.0
-
+private let gNormalColor : (CGFloat, CGFloat, CGFloat) = (64,64,64)
+private let gSelectedColor : (CGFloat, CGFloat, CGFloat) = (254, 205, 81)
 
 class GKBPageTittleView: UIView {
     var tittles  = [String]()
@@ -79,12 +80,16 @@ class GKBPageTittleView: UIView {
     }
     
     @objc private func titltLabelCklick(tapGes:UITapGestureRecognizer) {
-        GKBLog(message: "title点击了")
+     
         guard  let tagetLabel = tapGes.view as? UILabel   else{return}
+           GKBLog(message: "title点击了\(tagetLabel.tag)   上一次是\(currentIndex)")
         if tagetLabel.tag == currentIndex {return}
         let oldLabel = titleLables[currentIndex]
-        tagetLabel.textColor = UIColor.orange
-        oldLabel.textColor = UIColor.darkGray
+//        tagetLabel.textColor = UIColor.orange
+//        oldLabel.textColor = UIColor.darkGray
+
+        tagetLabel.textColor = UIColor(r: gSelectedColor.0, g: gSelectedColor.1, b: gSelectedColor.2)
+        oldLabel.textColor = UIColor(r: gNormalColor.0, g: gNormalColor.1, b: gNormalColor.2)
          scroLine?.frame.origin.x = tagetLabel.frame.origin.x
         currentIndex = tagetLabel.tag
 
@@ -117,11 +122,16 @@ class GKBPageTittleView: UIView {
     func changeLabelTexColorAndLineX(souceIndex: Int, tagetIndex : Int, progress: CGFloat){
         let oldLabel = titleLables[souceIndex]
         let tagetLabel = titleLables[tagetIndex]
-//        oldLabel.textColor = UIColor.darkGray
-//        tagetLabel.textColor = UIColor.orange
+       
+       
         let moveX = progress * (tagetLabel.frame.origin.x - oldLabel.frame.origin.x)
         scroLine?.frame.origin.x = oldLabel.frame.origin.x + moveX
-      
+        
+        let deltaC = (gSelectedColor.0 - gNormalColor.0, gSelectedColor.1 - gNormalColor.1, gSelectedColor.2 - gNormalColor.2)
+        oldLabel.textColor = UIColor(r: gSelectedColor.0 - deltaC.0*progress, g: gSelectedColor.1 - deltaC.1*progress, b: gSelectedColor.2 - deltaC.2*progress)
+        tagetLabel.textColor = UIColor(r: gNormalColor.0 + deltaC.0*progress, g: gNormalColor.1 + deltaC.1*progress, b: gNormalColor.2 + deltaC.2*progress)
+        currentIndex = tagetIndex
+        
     }
 }
 

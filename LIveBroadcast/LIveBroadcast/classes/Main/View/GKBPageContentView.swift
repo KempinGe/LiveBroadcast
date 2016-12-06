@@ -39,16 +39,17 @@ class GKBPageContentView: UIView {
         collectionView.bounces = false
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.scrollsToTop = false
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: contentCellID)
         return collectionView
     }()
     
-    init(frame: CGRect, childVcs : [UIViewController], prentVc : UIViewController) {
+    init(frame: CGRect, childVcs : [UIViewController], prentVc : UIViewController?) {
         self.childVcs = childVcs
         self.parentVc = prentVc
         super.init(frame: frame)
         setUpUi()
-        backgroundColor = UIColor.purple
+      
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -61,19 +62,18 @@ class GKBPageContentView: UIView {
             parentVc?.addChildViewController(vc)
         }
         addSubview(collectionView)
-        collectionView.frame = self.bounds
+        collectionView.frame = bounds
         
         
     }
     
     //MARK:-对外暴露的方法 用于接受pageTitleView的点击
     func pageTitleViewClick(selectedIndex:Int){
-//        GKBLog(message: selectedIndex)
-        starOffsetX = CGFloat(selectedIndex)*gScreenW
-        currentIndex = selectedIndex
-        let indexPath = IndexPath(item: selectedIndex, section: 0)
-//        GKBLog(message: indexPath)
-        collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.right, animated: true)
+       
+        let offsetX = CGFloat(selectedIndex) * frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+        
+        GKBLog(message: "切换试图到\(selectedIndex) offset = \(offsetX)")
     }
 
 }
@@ -90,7 +90,7 @@ extension GKBPageContentView : UICollectionViewDelegate,UICollectionViewDataSour
         //1.创建Cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: contentCellID, for: indexPath)
         //解决重用的重复加载View问题
-        for view in cell.subviews {
+        for view in cell.contentView.subviews {
             view.removeFromSuperview()
           
         }
@@ -99,7 +99,6 @@ extension GKBPageContentView : UICollectionViewDelegate,UICollectionViewDataSour
         let childVc = childVcs[indexPath.item]
         childVc.view.frame = cell.contentView.bounds
 
-        childVc.view.backgroundColor = UIColor.blue
         cell.contentView.addSubview(childVc.view)
 
         return cell
@@ -110,51 +109,59 @@ extension GKBPageContentView : UICollectionViewDelegate,UICollectionViewDataSour
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        starOffsetX = scrollView.contentOffset.x
         isTitleCklic = false
+        starOffsetX = scrollView.contentOffset.x
+        
     }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if isTitleCklic {
-            return
-        }
+        if isTitleCklic { return }
+        // 1.定义获取需要的数据
         var progress : CGFloat = 0
-        var souceIndex = 0
-        var tagetIndex = 0
-        let curentOffSetX = scrollView.contentOffset.x
+        var sourceIndex : Int = 0
+        var targetIndex : Int = 0
+        
+        // 2.判断是左滑还是右滑
+        let currentOffsetX = scrollView.contentOffset.x
         let scrollViewW = scrollView.bounds.width
-//        print("starOffSet    \(starOffsetX),    curentOffset:   \(curentOffSetX)")
-        if  curentOffSetX>starOffsetX {
-            GKBLog(message: starOffsetX)
-            progress = (curentOffSetX/scrollViewW) - floor(curentOffSetX/scrollViewW)
-            souceIndex = Int(starOffsetX/scrollViewW)
-            tagetIndex = souceIndex + 1
-            if tagetIndex >= childVcs.count {
-                tagetIndex = childVcs.count - 1
-            }
-            if (curentOffSetX - starOffsetX) == scrollViewW  {
-                progress = 1
-                souceIndex = tagetIndex
+        if currentOffsetX > starOffsetX{ // 左滑
+            // 1.计算progress
+            progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW)
+            
+            // 2.计算sourceIndex
+            sourceIndex = Int(currentOffsetX / scrollViewW)
+            
+            // 3.计算targetIndex
+            targetIndex = sourceIndex + 1
+            if targetIndex >= childVcs.count {
+                targetIndex = childVcs.count - 1
             }
             
-        }else{
-            progress = 1 - ((curentOffSetX/scrollViewW) - floor(curentOffSetX/scrollViewW))
-            tagetIndex = Int(curentOffSetX/scrollViewW)
-            souceIndex = tagetIndex + 1
-            if souceIndex >= childVcs.count {
-                souceIndex = childVcs.count - 1
-            }
-            if (curentOffSetX - starOffsetX) == -scrollViewW{
+            // 4.如果完全划过去
+            if currentOffsetX - starOffsetX == scrollViewW {
                 progress = 1
-                souceIndex = tagetIndex
+                targetIndex = sourceIndex
+            }
+        } else { // 右滑
+            // 1.计算progress
+            progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW))
+            
+            // 2.计算targetIndex
+            targetIndex = Int(currentOffsetX / scrollViewW)
+            
+            // 3.计算sourceIndex
+            sourceIndex = targetIndex + 1
+            if sourceIndex >= childVcs.count {
+                sourceIndex = childVcs.count - 1
             }
         }
         
 //        guard progress == 1.0 else { return }
 //         delegate?.pagecontentViewScroll(pagecontentView: self, scroToIndex: tagetIndex)
-        delegate?.pagecontentViewScroll(pagecontentView: self, souceToIndex: souceIndex, tagateIndex: tagetIndex, progress: progress)
+        delegate?.pagecontentViewScroll(pagecontentView: self, souceToIndex: sourceIndex, tagateIndex: targetIndex, progress: progress)
 
        
-        print("progress:\(progress)),   tagetIndes:\(tagetIndex),   souceIndex:\(souceIndex) ,  scroViewW:\(scrollViewW)")
+        print("progress:\(progress)),   tagetIndes:\(targetIndex),   souceIndex:\(sourceIndex) ,  scroViewW:\(scrollViewW)")
       
        
     }

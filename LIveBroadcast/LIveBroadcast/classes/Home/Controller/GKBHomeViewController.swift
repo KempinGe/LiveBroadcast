@@ -36,8 +36,8 @@ class GKBHomeViewController: UIViewController {
         let contentH = gScreenH - tittleViewH - gstatuH - gNavH
         let contentFrame = CGRect(x: 0, y: gstatuH+gNavH+tittleViewH, width: (self?.view.frame.width)!, height: contentH)
         var childVcs = [UIViewController]()
-       
-        for var x in 0..<4{
+        childVcs.append(GKBRecomentViewController())
+        for var x in 0..<3{
            let vc = UIViewController()
             vc.view.backgroundColor = UIColor.red
             childVcs.append(vc)
@@ -83,7 +83,7 @@ extension GKBHomeViewController {
     
 }
 
-//MARK:-pagetiltleView的代理
+//MARK:-pagetiltleView与pageContentView的代理
 extension GKBHomeViewController : PageTitleDelegate, PagecontentViewScrollDelegate{
     func pagecontentViewScroll(pagecontentView: GKBPageContentView, souceToIndex: Int, tagateIndex: Int, progress: CGFloat) {
         pageTittleView.changeLabelTexColorAndLineX(souceIndex: souceToIndex, tagetIndex: tagateIndex, progress: progress)
