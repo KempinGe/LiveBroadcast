@@ -10,6 +10,9 @@
 		063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */; };
 		063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1A1DE53AEE00ADDD1D /* Consts.swift */; };
 		063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */; };
+		064966D51DF8F57B00584D57 /* GKBRecomentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */; };
+		064966D71DF910C100584D57 /* GKBGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D61DF910C100584D57 /* GKBGroupModel.swift */; };
+		064966D91DF9152100584D57 /* GKBAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D81DF9152100584D57 /* GKBAnchorModel.swift */; };
 		0650EBE61DF64E53007AD663 /* GKBRecomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650EBE51DF64E53007AD663 /* GKBRecomentViewController.swift */; };
 		0650EBE91DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */; };
 		0650EBEA1DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */; };
@@ -29,19 +32,25 @@
 		069C63DB1DE47DBF0019F9E5 /* GKBLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DA1DE47DBF0019F9E5 /* GKBLiveViewController.swift */; };
 		069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */; };
 		069C63E01DE481F20019F9E5 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C63DF1DE481F20019F9E5 /* UIBarButtonItem+Extension.swift */; };
+		06A5B67A1DF799C30074C33C /* GKBProttyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5B6781DF799C30074C33C /* GKBProttyCollectionViewCell.swift */; };
+		06A5B67B1DF799C30074C33C /* GKBProttyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */; };
+		06A5B67D1DF7B9B80074C33C /* GKBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5B67C1DF7B9B80074C33C /* GKBNetworkTool.swift */; };
 		06C8B5341DEAC3F6009DDF96 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8B5331DEAC3F6009DDF96 /* UIColor+Extension.swift */; };
-		C06B887F5870573C4ADDF8AF /* libPods-LIveBroadcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */; };
+		838F31C5D30778032D408E15 /* Pods_LIveBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F9E8C6236B8B36478EC1EC /* Pods_LIveBroadcast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageTittleView.swift; sourceTree = "<group>"; };
 		063A5B1A1DE53AEE00ADDD1D /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageContentView.swift; sourceTree = "<group>"; };
+		064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomentViewModel.swift; sourceTree = "<group>"; };
+		064966D61DF910C100584D57 /* GKBGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBGroupModel.swift; sourceTree = "<group>"; };
+		064966D81DF9152100584D57 /* GKBAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBAnchorModel.swift; sourceTree = "<group>"; };
 		0650EBE51DF64E53007AD663 /* GKBRecomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomentViewController.swift; sourceTree = "<group>"; };
 		0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBCollectionHeaderReusableView.xib; sourceTree = "<group>"; };
-		0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBHomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GKBHomeCollectionViewCell.swift; path = ../../Home/View/GKBHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GKBHomeCollectionViewCell.xib; path = ../../Home/View/GKBHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		069C63971DE43F3B0019F9E5 /* LIveBroadcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveBroadcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069C639A1DE43F3B0019F9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		069C63A11DE43F3B0019F9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,10 +67,13 @@
 		069C63DA1DE47DBF0019F9E5 /* GKBLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBLiveViewController.swift; sourceTree = "<group>"; };
 		069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBHomeViewController.swift; sourceTree = "<group>"; };
 		069C63DF1DE481F20019F9E5 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		06A5B6781DF799C30074C33C /* GKBProttyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBProttyCollectionViewCell.swift; sourceTree = "<group>"; };
+		06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBProttyCollectionViewCell.xib; sourceTree = "<group>"; };
+		06A5B67C1DF7B9B80074C33C /* GKBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBNetworkTool.swift; sourceTree = "<group>"; };
 		06C8B5331DEAC3F6009DDF96 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.release.xcconfig"; sourceTree = "<group>"; };
-		D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LIveBroadcast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F9E8C6236B8B36478EC1EC /* Pods_LIveBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIveBroadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,13 +81,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06B887F5870573C4ADDF8AF /* libPods-LIveBroadcast.a in Frameworks */,
+				838F31C5D30778032D408E15 /* Pods_LIveBroadcast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064966D31DF8F45300584D57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		069C638E1DE43F3A0019F9E5 = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				069C63CA1DE4743B0019F9E5 /* Controller */,
-				069C63CB1DE4743B0019F9E5 /* Model */,
 				069C63CC1DE4743B0019F9E5 /* View */,
+				069C63CB1DE4743B0019F9E5 /* Model */,
+				064966D31DF8F45300584D57 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -174,6 +195,7 @@
 			children = (
 				069C63DE1DE481D50019F9E5 /* Extension */,
 				063A5B1A1DE53AEE00ADDD1D /* Consts.swift */,
+				06A5B67C1DF7B9B80074C33C /* GKBNetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -199,6 +221,10 @@
 			children = (
 				063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */,
 				063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */,
+				06A5B6781DF799C30074C33C /* GKBProttyCollectionViewCell.swift */,
+				06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */,
+				0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */,
+				0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +242,8 @@
 		069C63CB1DE4743B0019F9E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				064966D61DF910C100584D57 /* GKBGroupModel.swift */,
+				064966D81DF9152100584D57 /* GKBAnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,8 +253,6 @@
 			children = (
 				0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */,
 				0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */,
-				0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */,
-				0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,7 +347,7 @@
 		D1AD822FFE6DA5A1658963F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D33D0C471C273B2765071C0B /* libPods-LIveBroadcast.a */,
+				C4F9E8C6236B8B36478EC1EC /* Pods_LIveBroadcast.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -397,6 +423,7 @@
 				069C63B91DE46DE40019F9E5 /* Live.storyboard in Resources */,
 				069C63BE1DE46E070019F9E5 /* Mine.storyboard in Resources */,
 				069C63B71DE46DB00019F9E5 /* Home.storyboard in Resources */,
+				06A5B67B1DF799C30074C33C /* GKBProttyCollectionViewCell.xib in Resources */,
 				069C63BC1DE46DF60019F9E5 /* Follow.storyboard in Resources */,
 				0650EBEE1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib in Resources */,
 			);
@@ -457,16 +484,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064966D71DF910C100584D57 /* GKBGroupModel.swift in Sources */,
 				069C63DB1DE47DBF0019F9E5 /* GKBLiveViewController.swift in Sources */,
 				069C63C71DE473240019F9E5 /* GKBMainViewController.swift in Sources */,
+				064966D91DF9152100584D57 /* GKBAnchorModel.swift in Sources */,
 				0650EBE61DF64E53007AD663 /* GKBRecomentViewController.swift in Sources */,
 				063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */,
 				06C8B5341DEAC3F6009DDF96 /* UIColor+Extension.swift in Sources */,
+				064966D51DF8F57B00584D57 /* GKBRecomentViewModel.swift in Sources */,
 				069C639B1DE43F3B0019F9E5 /* AppDelegate.swift in Sources */,
+				06A5B67A1DF799C30074C33C /* GKBProttyCollectionViewCell.swift in Sources */,
 				069C63E01DE481F20019F9E5 /* UIBarButtonItem+Extension.swift in Sources */,
 				063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */,
 				069C63D91DE47DA80019F9E5 /* GKBFollowViewController.swift in Sources */,
 				069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */,
+				06A5B67D1DF7B9B80074C33C /* GKBNetworkTool.swift in Sources */,
 				063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */,
 				069C63D71DE47D800019F9E5 /* GKBMineViewController.swift in Sources */,
 				0650EBED1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift in Sources */,

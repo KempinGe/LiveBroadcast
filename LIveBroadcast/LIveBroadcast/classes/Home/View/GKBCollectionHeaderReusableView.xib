@@ -71,7 +71,11 @@
                 <constraint firstItem="GGv-Si-Znc" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="dCa-mO-gaj"/>
                 <constraint firstItem="GGv-Si-Znc" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="quG-ZZ-LVV"/>
             </constraints>
-            <point key="canvasLocation" x="-26" y="95"/>
+            <connections>
+                <outlet property="iconImageView" destination="wO8-5K-yaz" id="z8h-r3-GBx"/>
+                <outlet property="titleLabel" destination="Y2i-U8-Khq" id="PlT-6O-dkZ"/>
+            </connections>
+            <point key="canvasLocation" x="-354" y="105"/>
         </collectionReusableView>
     </objects>
     <resources>

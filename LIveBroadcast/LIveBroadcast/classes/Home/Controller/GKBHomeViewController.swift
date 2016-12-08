@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+//斗鱼接口http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=4&client_sys=ios&offset=0
+
 private let tittleViewH : CGFloat = 40
 class GKBHomeViewController: UIViewController {
 
