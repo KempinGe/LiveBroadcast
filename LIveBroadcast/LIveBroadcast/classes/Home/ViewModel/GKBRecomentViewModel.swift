@@ -77,9 +77,9 @@ class GKBRecomentViewModel: BaseViewModel {
         
         //3.大数据数据(第一组热门数据)http://capi.douyucdn.cn/api/v1/getHotCate
         dispatchGroup.enter()
-        reloadData(URL: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameter, finishedCallBack: {
-            dispatchGroup.leave()
-        })
+//        reloadData(URL: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameter, finishedCallBack: {
+//            dispatchGroup.leave()
+//        })
     
         GKBNetworkTool.request(type: .GET, URL: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameter, finishBlock:{(resulte) in
             
