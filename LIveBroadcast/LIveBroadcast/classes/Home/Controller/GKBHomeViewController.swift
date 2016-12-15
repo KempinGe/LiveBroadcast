@@ -40,7 +40,8 @@ class GKBHomeViewController: UIViewController {
         let contentFrame = CGRect(x: 0, y: gstatuH+gNavH+tittleViewH, width: (self?.view.frame.width)!, height: contentH)
         var childVcs = [UIViewController]()
         childVcs.append(GKBRecomentViewController())
-        for var x in 0..<3{
+        childVcs.append(GKBAllGameViewController())
+        for var x in 0..<2{
            let vc = UIViewController()
             vc.view.backgroundColor = UIColor.red
             childVcs.append(vc)

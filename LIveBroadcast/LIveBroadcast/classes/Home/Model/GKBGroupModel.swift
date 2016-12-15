@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GKBGroupModel: NSObject {
+class GKBGroupModel: GKBBaseGameModel {
     /*	room_list		[4]
      
      push_vertical_screen	:	0
@@ -20,7 +20,8 @@ class GKBGroupModel: NSObject {
      tag_id	:	1
 */
     lazy var anchorRooms : [GKBAnchorModel] = [GKBAnchorModel]()
-    var room_list : [[String : NSObject]]? {
+    
+    var room_list : [[String : Any]]? {
         didSet{
          
             guard let  room_list = room_list else { return }
@@ -29,23 +30,5 @@ class GKBGroupModel: NSObject {
             }
         }
     }
-    
-    var tag_id : String = ""
-    var icon_url  : String = ""
-    var tag_name : String = ""
-    
-    init(dict : [String: NSObject]) {
-        super.init()
-   
-        setValuesForKeys(dict)
-    }
-   override init() {
-     
-    }
-    
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
-    }
-    
-    
+ 
 }

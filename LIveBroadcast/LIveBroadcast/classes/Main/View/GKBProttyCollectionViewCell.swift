@@ -9,22 +9,19 @@
 import UIKit
 import Kingfisher
 
-class GKBProttyCollectionViewCell: UICollectionViewCell {
+class GKBProttyCollectionViewCell: GKBRecomendBaseCell {
 
-    @IBOutlet weak var coverImageView: UIImageView!
+ 
+    @IBOutlet weak var locationBtn: UIButton!
     
-    @IBOutlet weak var anchorNameLabel: UILabel!
-    
-    @IBOutlet weak var peapleCountLabel: UILabel!
-    @IBOutlet weak var locationLabel: UIButton!
-    var anchorRoom : GKBAnchorModel?{
+    override var anchorRoom : GKBAnchorModel?{
         didSet{
-            guard let anchorRoom = anchorRoom else { return  }
-            peapleCountLabel.text = "\(anchorRoom.online)人在线"
-            anchorNameLabel.text = anchorRoom.nickname
-            locationLabel.titleLabel?.text = anchorRoom.anchor_city
-            coverImageView.kf.setImage(with: URL(string :anchorRoom.vertical_src))
-        }
+            
+             // 将属性传递给父类
+            super.anchorRoom = anchorRoom
+            
+            locationBtn.titleLabel?.text = anchorRoom?.anchor_city
+                   }
     }
     
     override func awakeFromNib() {

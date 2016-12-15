@@ -39,6 +39,12 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taobao_item_img_default" translatesAutoresizingMaskIntoConstraints="NO" id="iUQ-iK-xHC">
                         <rect key="frame" x="0.0" y="0.0" width="206" height="171"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100人在线" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYQ-XA-20R">
                         <rect key="frame" x="151" y="5" width="50" height="20"/>
@@ -47,7 +53,7 @@
                             <constraint firstAttribute="width" constant="50" id="UI0-kg-qeD"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -67,12 +73,12 @@
             </constraints>
             <size key="customSize" width="206" height="223"/>
             <connections>
-                <outlet property="anchorNameLabel" destination="80k-v2-eKF" id="wNK-eT-adw"/>
-                <outlet property="coverImageView" destination="iUQ-iK-xHC" id="3hQ-eT-27R"/>
-                <outlet property="locationLabel" destination="Js1-bx-mtK" id="04F-1l-CPu"/>
-                <outlet property="peapleCountLabel" destination="DYQ-XA-20R" id="lO8-Um-fvj"/>
+                <outlet property="anchorNameLabel" destination="80k-v2-eKF" id="ynS-5e-13l"/>
+                <outlet property="coverImageView" destination="iUQ-iK-xHC" id="c35-Ic-3AC"/>
+                <outlet property="locationBtn" destination="Js1-bx-mtK" id="vpk-Cu-Gak"/>
+                <outlet property="pepleOnlineLabel" destination="DYQ-XA-20R" id="oWW-Pb-rDR"/>
             </connections>
-            <point key="canvasLocation" x="3" y="39.5"/>
+            <point key="canvasLocation" x="72" y="38"/>
         </collectionViewCell>
     </objects>
     <resources>

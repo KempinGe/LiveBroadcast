@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06234E141DFD38210088614F /* GKBCarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06234E131DFD38210088614F /* GKBCarouselModel.swift */; };
 		063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */; };
 		063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1A1DE53AEE00ADDD1D /* Consts.swift */; };
 		063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */; };
+		063D5EA41DFE4AE2004385C5 /* GKBRecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5EA31DFE4AE2004385C5 /* GKBRecommendGameView.swift */; };
+		063D5EA61DFE4AEF004385C5 /* GKBRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063D5EA51DFE4AEF004385C5 /* GKBRecommendGameView.xib */; };
+		063D5EA91DFE524B004385C5 /* GKBRecomendGameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5EA71DFE524B004385C5 /* GKBRecomendGameViewCell.swift */; };
+		063D5EAA1DFE524B004385C5 /* GKBRecomendGameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063D5EA81DFE524B004385C5 /* GKBRecomendGameViewCell.xib */; };
 		064966D51DF8F57B00584D57 /* GKBRecomentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */; };
 		064966D71DF910C100584D57 /* GKBGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D61DF910C100584D57 /* GKBGroupModel.swift */; };
 		064966D91DF9152100584D57 /* GKBAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064966D81DF9152100584D57 /* GKBAnchorModel.swift */; };
@@ -35,14 +40,28 @@
 		06A5B67A1DF799C30074C33C /* GKBProttyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5B6781DF799C30074C33C /* GKBProttyCollectionViewCell.swift */; };
 		06A5B67B1DF799C30074C33C /* GKBProttyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */; };
 		06A5B67D1DF7B9B80074C33C /* GKBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A5B67C1DF7B9B80074C33C /* GKBNetworkTool.swift */; };
+		06B810601DFCE75B008F4A22 /* GKBCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B8105F1DFCE75B008F4A22 /* GKBCarouselView.swift */; };
+		06B810621DFCE772008F4A22 /* GKBCarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06B810611DFCE772008F4A22 /* GKBCarouselView.xib */; };
+		06BF26411DFF80CB00EE0E13 /* GKBRecomendBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF263F1DFF80CB00EE0E13 /* GKBRecomendBaseCell.swift */; };
+		06BF26441DFF8A8400EE0E13 /* GKBGamneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF26431DFF8A8400EE0E13 /* GKBGamneViewModel.swift */; };
+		06BF26461DFF8C1900EE0E13 /* GKBAllGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF26451DFF8C1900EE0E13 /* GKBAllGameViewController.swift */; };
+		06BF26481DFF8D0400EE0E13 /* GKBAllGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF26471DFF8D0400EE0E13 /* GKBAllGameModel.swift */; };
+		06BF264A1DFF8F6E00EE0E13 /* GKBBaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF26491DFF8F6E00EE0E13 /* GKBBaseGameModel.swift */; };
+		06BF264E1DFFCC4D00EE0E13 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF264D1DFFCC4D00EE0E13 /* BaseViewModel.swift */; };
+		06BF26501DFFD10000EE0E13 /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BF264F1DFFD10000EE0E13 /* BaseAnchorViewController.swift */; };
 		06C8B5341DEAC3F6009DDF96 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8B5331DEAC3F6009DDF96 /* UIColor+Extension.swift */; };
 		838F31C5D30778032D408E15 /* Pods_LIveBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F9E8C6236B8B36478EC1EC /* Pods_LIveBroadcast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06234E131DFD38210088614F /* GKBCarouselModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBCarouselModel.swift; sourceTree = "<group>"; };
 		063A5B181DE5366B00ADDD1D /* GKBPageTittleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageTittleView.swift; sourceTree = "<group>"; };
 		063A5B1A1DE53AEE00ADDD1D /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		063A5B1C1DE5764B00ADDD1D /* GKBPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBPageContentView.swift; sourceTree = "<group>"; };
+		063D5EA31DFE4AE2004385C5 /* GKBRecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecommendGameView.swift; sourceTree = "<group>"; };
+		063D5EA51DFE4AEF004385C5 /* GKBRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBRecommendGameView.xib; sourceTree = "<group>"; };
+		063D5EA71DFE524B004385C5 /* GKBRecomendGameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomendGameViewCell.swift; sourceTree = "<group>"; };
+		063D5EA81DFE524B004385C5 /* GKBRecomendGameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBRecomendGameViewCell.xib; sourceTree = "<group>"; };
 		064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomentViewModel.swift; sourceTree = "<group>"; };
 		064966D61DF910C100584D57 /* GKBGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBGroupModel.swift; sourceTree = "<group>"; };
 		064966D81DF9152100584D57 /* GKBAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBAnchorModel.swift; sourceTree = "<group>"; };
@@ -70,6 +89,15 @@
 		06A5B6781DF799C30074C33C /* GKBProttyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBProttyCollectionViewCell.swift; sourceTree = "<group>"; };
 		06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBProttyCollectionViewCell.xib; sourceTree = "<group>"; };
 		06A5B67C1DF7B9B80074C33C /* GKBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBNetworkTool.swift; sourceTree = "<group>"; };
+		06B8105F1DFCE75B008F4A22 /* GKBCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBCarouselView.swift; sourceTree = "<group>"; };
+		06B810611DFCE772008F4A22 /* GKBCarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKBCarouselView.xib; sourceTree = "<group>"; };
+		06BF263F1DFF80CB00EE0E13 /* GKBRecomendBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBRecomendBaseCell.swift; sourceTree = "<group>"; };
+		06BF26431DFF8A8400EE0E13 /* GKBGamneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBGamneViewModel.swift; sourceTree = "<group>"; };
+		06BF26451DFF8C1900EE0E13 /* GKBAllGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBAllGameViewController.swift; sourceTree = "<group>"; };
+		06BF26471DFF8D0400EE0E13 /* GKBAllGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBAllGameModel.swift; sourceTree = "<group>"; };
+		06BF26491DFF8F6E00EE0E13 /* GKBBaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBBaseGameModel.swift; sourceTree = "<group>"; };
+		06BF264D1DFFCC4D00EE0E13 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		06BF264F1DFFD10000EE0E13 /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
 		06C8B5331DEAC3F6009DDF96 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveBroadcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIveBroadcast/Pods-LIveBroadcast.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				064966D41DF8F57B00584D57 /* GKBRecomentViewModel.swift */,
+				06BF26431DFF8A8400EE0E13 /* GKBGamneViewModel.swift */,
+				06BF264D1DFFCC4D00EE0E13 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,6 +235,7 @@
 			children = (
 				069C63C81DE473B20019F9E5 /* Main.storyboard */,
 				069C63C61DE473240019F9E5 /* GKBMainViewController.swift */,
+				06BF264F1DFFD10000EE0E13 /* BaseAnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +256,7 @@
 				06A5B6791DF799C30074C33C /* GKBProttyCollectionViewCell.xib */,
 				0650EBEB1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift */,
 				0650EBEC1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib */,
+				06BF263F1DFF80CB00EE0E13 /* GKBRecomendBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +267,7 @@
 				069C63B51DE46DB00019F9E5 /* Home.storyboard */,
 				069C63DC1DE47DD90019F9E5 /* GKBHomeViewController.swift */,
 				0650EBE51DF64E53007AD663 /* GKBRecomentViewController.swift */,
+				06BF26451DFF8C1900EE0E13 /* GKBAllGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,8 +275,11 @@
 		069C63CB1DE4743B0019F9E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06BF26491DFF8F6E00EE0E13 /* GKBBaseGameModel.swift */,
 				064966D61DF910C100584D57 /* GKBGroupModel.swift */,
 				064966D81DF9152100584D57 /* GKBAnchorModel.swift */,
+				06234E131DFD38210088614F /* GKBCarouselModel.swift */,
+				06BF26471DFF8D0400EE0E13 /* GKBAllGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +289,12 @@
 			children = (
 				0650EBE71DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift */,
 				0650EBE81DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib */,
+				06B8105F1DFCE75B008F4A22 /* GKBCarouselView.swift */,
+				06B810611DFCE772008F4A22 /* GKBCarouselView.xib */,
+				063D5EA31DFE4AE2004385C5 /* GKBRecommendGameView.swift */,
+				063D5EA51DFE4AEF004385C5 /* GKBRecommendGameView.xib */,
+				063D5EA71DFE524B004385C5 /* GKBRecomendGameViewCell.swift */,
+				063D5EA81DFE524B004385C5 /* GKBRecomendGameViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,12 +460,15 @@
 			files = (
 				069C63C91DE473B20019F9E5 /* Main.storyboard in Resources */,
 				069C63A51DE43F3B0019F9E5 /* LaunchScreen.storyboard in Resources */,
+				06B810621DFCE772008F4A22 /* GKBCarouselView.xib in Resources */,
 				069C63A21DE43F3B0019F9E5 /* Assets.xcassets in Resources */,
 				0650EBEA1DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.xib in Resources */,
 				069C63B91DE46DE40019F9E5 /* Live.storyboard in Resources */,
 				069C63BE1DE46E070019F9E5 /* Mine.storyboard in Resources */,
 				069C63B71DE46DB00019F9E5 /* Home.storyboard in Resources */,
+				063D5EA61DFE4AEF004385C5 /* GKBRecommendGameView.xib in Resources */,
 				06A5B67B1DF799C30074C33C /* GKBProttyCollectionViewCell.xib in Resources */,
+				063D5EAA1DFE524B004385C5 /* GKBRecomendGameViewCell.xib in Resources */,
 				069C63BC1DE46DF60019F9E5 /* Follow.storyboard in Resources */,
 				0650EBEE1DF6B56D007AD663 /* GKBHomeCollectionViewCell.xib in Resources */,
 			);
@@ -489,18 +534,29 @@
 				069C63C71DE473240019F9E5 /* GKBMainViewController.swift in Sources */,
 				064966D91DF9152100584D57 /* GKBAnchorModel.swift in Sources */,
 				0650EBE61DF64E53007AD663 /* GKBRecomentViewController.swift in Sources */,
+				06BF26501DFFD10000EE0E13 /* BaseAnchorViewController.swift in Sources */,
+				06234E141DFD38210088614F /* GKBCarouselModel.swift in Sources */,
 				063A5B1D1DE5764B00ADDD1D /* GKBPageContentView.swift in Sources */,
 				06C8B5341DEAC3F6009DDF96 /* UIColor+Extension.swift in Sources */,
 				064966D51DF8F57B00584D57 /* GKBRecomentViewModel.swift in Sources */,
 				069C639B1DE43F3B0019F9E5 /* AppDelegate.swift in Sources */,
 				06A5B67A1DF799C30074C33C /* GKBProttyCollectionViewCell.swift in Sources */,
+				06BF26481DFF8D0400EE0E13 /* GKBAllGameModel.swift in Sources */,
 				069C63E01DE481F20019F9E5 /* UIBarButtonItem+Extension.swift in Sources */,
 				063A5B191DE5366B00ADDD1D /* GKBPageTittleView.swift in Sources */,
 				069C63D91DE47DA80019F9E5 /* GKBFollowViewController.swift in Sources */,
+				063D5EA41DFE4AE2004385C5 /* GKBRecommendGameView.swift in Sources */,
 				069C63DD1DE47DD90019F9E5 /* GKBHomeViewController.swift in Sources */,
+				06BF26411DFF80CB00EE0E13 /* GKBRecomendBaseCell.swift in Sources */,
+				06BF26441DFF8A8400EE0E13 /* GKBGamneViewModel.swift in Sources */,
+				06BF264A1DFF8F6E00EE0E13 /* GKBBaseGameModel.swift in Sources */,
+				063D5EA91DFE524B004385C5 /* GKBRecomendGameViewCell.swift in Sources */,
 				06A5B67D1DF7B9B80074C33C /* GKBNetworkTool.swift in Sources */,
 				063A5B1B1DE53AEE00ADDD1D /* Consts.swift in Sources */,
+				06BF264E1DFFCC4D00EE0E13 /* BaseViewModel.swift in Sources */,
+				06BF26461DFF8C1900EE0E13 /* GKBAllGameViewController.swift in Sources */,
 				069C63D71DE47D800019F9E5 /* GKBMineViewController.swift in Sources */,
+				06B810601DFCE75B008F4A22 /* GKBCarouselView.swift in Sources */,
 				0650EBED1DF6B56D007AD663 /* GKBHomeCollectionViewCell.swift in Sources */,
 				0650EBE91DF6ACF2007AD663 /* GKBCollectionHeaderReusableView.swift in Sources */,
 			);
@@ -556,6 +612,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -578,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -606,6 +663,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -622,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -635,6 +693,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E3B94509DF1A04F2A43B3EA /* Pods-LIveBroadcast.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = NJ6BK7F9R2;
@@ -651,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E1EA984C31933D61F8BA619 /* Pods-LIveBroadcast.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = NJ6BK7F9R2;

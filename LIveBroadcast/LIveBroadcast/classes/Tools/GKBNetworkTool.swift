@@ -15,7 +15,7 @@ enum MethodType{
 }
 
 class GKBNetworkTool: NSObject {
-    class func request(type : MethodType, URL: String, parameters : [String : String]? = nil , finishBlock : @escaping (_ result : AnyObject ) -> ()) {
+    class func request(type : MethodType, URL: String, parameters : [String : Any]? = nil , finishBlock : @escaping (_ result : AnyObject ) -> ()) {
         let methondType : HTTPMethod
         if type == .GET {
             methondType = .get

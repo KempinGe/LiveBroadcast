@@ -18,7 +18,7 @@ class GKBCollectionHeaderReusableView: UICollectionReusableView {
             guard let icon_url = anchorGroup?.icon_url  else {  return }
             guard  let imageData = NSData(contentsOf:URL(string: icon_url)!) else {
                 iconImageView.image = UIImage.init(named: "")
-                return
+                              return
             }
            iconImageView.image = UIImage(data: imageData as Data)
         }
@@ -26,6 +26,7 @@ class GKBCollectionHeaderReusableView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    
     }
     
 }
